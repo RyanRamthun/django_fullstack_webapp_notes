@@ -1,0 +1,16 @@
+{% extends "notes/base.html" %}
+{% block content %}
+	<div class="container py-3">
+		<div class="list-group">
+			<a href="#" class="list-group-item list-group-item-action">
+				<div class="d-flex w-100 justify-content-between">
+					<h5 class="mb-1">About Notes App</h5>
+				</div>
+				<p class="mb-1">
+					I created this Django project to showcase a Notes App that keeps track of important things you need to remember later. Included in the app are many functionalities. You can create a new profile on the front end of the website, and your login credentials will be saved into the database. After you create a profile, you will be able to create a new note, edit your previous notes, and delete any note that you have posted. By clicking on any note, you are able to see a detailed view of that note, and if the note is yours, you can delete it. After you decide to log out, the nav bar will update showing login and register, so that the users know when they are logged in. The login and register page use Crispy Forms, which adds a lot of visual appeal right out of the box. Overall, I had a lot of fun creating this basic app. I also feel I learned a ton.
+				</p>
+				<small>Ryan Ramthun</small>
+			</a>
+		</div>
+	</div>
+{% endblock %}

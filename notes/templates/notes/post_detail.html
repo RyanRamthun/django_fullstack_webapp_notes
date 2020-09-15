@@ -1,0 +1,21 @@
+{% extends "notes/base.html" %}
+{% block content %}
+    <div class="container py-2">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{ object.title }}</h5>
+                    <small>{{ object.date_posted|date:"F d, Y"  }}</small>
+                </div>
+                <p class="mb-1">{{ object.content}}</p>
+                <small>{{ object.author }}</small>
+            </a>
+            <div>
+                {% if object.author == user %}
+                    <a class="btn btn-secondary btn-sm px-5 my-1" href="{% url 'notes-update' object.id %}">Update</a>
+                    <a class="btn btn-danger btn-sm px-5 my-1" href="{% url 'notes-delete' object.id %}">Delete</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

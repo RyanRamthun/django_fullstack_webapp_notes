@@ -1,0 +1,17 @@
+{% extends "notes/base.html" %}
+{% block content %}
+    <div class="container px-5 py-2">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom md-4">Delete Note</legend>
+                <h3>Delete "{{ object.title }}"</h3>
+                <h3>Are You Sure?</h3>
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-danger" type="submit">Delete Note</button>
+                <a class="btn btn-outline-info" href="{% url 'notes-detail' object.id %}">Cancel</a>
+            </div>
+        </form>
+    </div>
+{% endblock %}
