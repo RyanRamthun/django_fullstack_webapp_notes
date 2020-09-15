@@ -11,9 +11,13 @@ This to-do list like app uses the Django framework to create a good outline of w
 * Ability to log out from accounts
 
 # Building
-It is best to use the venv tool to build locally.
+It is best to use the venv tool to build locally.<br />
+Create new virtual environment:
 ```python
 Python3 -m venv /path/to/new/virtual/environment
+```
+Activate virtual environment:
+```python
 source env/bin/activate 
 ```
 Then Navigate inside project and run:
