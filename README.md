@@ -1,4 +1,4 @@
-# Django Full-Stack To-Do App with User Functionality 
+# Django To-Do App with User Functionality 
 
 This to-do list like app uses the Django framework to create a good outline of what many full-stack web applications look like.
 <br />
@@ -11,6 +11,15 @@ This to-do list like app uses the Django framework to create a good outline of w
 * Ability to log out from accounts
 
 # Building
+
+## Requirements.txt
+```
+asgiref==3.2.10
+Django==3.1.1
+django-crispy-forms==1.9.2
+pytz==2020.1
+sqlparse==0.3.1
+```
 It is best to use the venv tool to build locally.<br />
 Create new virtual environment:
 ```python
